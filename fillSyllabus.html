@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fillSyllabus.css">
+    <link rel="stylesheet" href="fillSyllabus.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fill Syllabus</title>
+  </head>
+  <body style="background-image: url('pictures/bg.jpg'); color:white" >
+    <div class="navbar">
+        <a  href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Research
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="htmlResearch.html">HTML</a>
+          <a href="cssResearch.html">CSS </a>
+          <a href="jsResearch.html">JavaScript </a>
+          <a href="cookies.html">Threats</a>
+          <a href="references.html">Reference </a>
+        </div>
+        </div> 
+        <a class="active" href="#">Fill Syllabus</a>
+        <a href="https://final446.000webhostapp.com/">PROJECT</a>
+      </div>
+    <h1 class="indexdiv2">Fill Syllabus</h1>
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <br />
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" />
+      <br />
+      <label for="category">Category:</label>
+      <input value="Full Time" id="categoryFullTime" name="category" type="radio"/>
+      <label for="categoryFullTime">Full Time</label>
+      <input
+      value="Part Time" type="radio" id="categoryPartTime" name="category" />
+      <label for="categoryPartTime">Part Time</label>
+      <br />
+      <label for="office">Office:</label>
+      <input type="text" id="office" name="office" pattern="[A-Z]{1,2} \d{3}[A-Z]" placeholder="B 111A"  />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="officeHours">Office Hours</label>
+      <input type="text" id="officeHours" name="officeHours" pattern="(MT|MW|MF|TR|TF|WR) (.*\d.*)?" placeholder="MT 12:30-14:00" />
+      <br />
+      
+      <label for="academicunit">Academic Unit:</label>
+      <input type="text" id="academicunit" name="academicunit" />
+      <br />
+      <label for="departement">Department:</label>
+      <input type="text" id="department" name="department" />
+      <br />
+      <label for="code">Code (XXX000):</label>
+      <input type="text" id="code" name="code" pattern="[A-Z]{3}\d{3}" placeholder="GIN446" required />
+      <br />
+      <label for="englishtitle">English Title:</label>
+      <input type="text" id="englishtitle" name="englishtitle" />
+      <br />
+      <label>Type:</label>
+      <br>
+      <input type="checkbox" id="typeOption1" name="type[]" value="C" />
+      <label for="typeOption1">C</label>
+      
+      <input type="checkbox" id="typeOption2" name="type[]" value="CTP" />
+      <label for="typeOption2">CTP</label>
+     
+      <input type="checkbox" id="typeOption3" name="type[]" value="TP" />
+      <label for="typeOption3">TP</label>
+      
+      <input type="checkbox" id="typeOption4" name="type[]" value="P" />
+      <label for="typeOption4">P</label>
+      
+      <input type="checkbox" id="typeOption5" name="type[]" value="TD" />
+      <label for="typeOption5">TD</label>
+      
+      <input type="checkbox" id="typeOption6" name="type[]" value="S" />
+      <label for="typeOption6">S</label>
+    
+      <input type="checkbox" id="typeOption7" name="type[]" value="TH" />
+      <label for="typeOption7">TH</label>
+      <br/>
+      <label for="pr">Pre-requisites:</label>
+      <input type="text" id="pr" name="pr" />
+      <br />
+      <label for="cr"> Co-requesites:</label>
+      <input type="text" id="cr" name="cr" />
+      <br />
+      <label for="Numcredits">Number of credits :</label>
+      <input type="number" id="Numcredits" name="Numcredits" min="0" max="6" />
+      <br />
+      <label for="chpw">Contact hours per week:</label>
+      <input type="number" id="chpw" name="chpw" min="0" max="6" />
+      <br />
+      <label>Delivery Language:</label>
+
+      <input type="radio" id="DL1" name="DL" value="French">
+      <label for="DL1">French</label>
+      
+      <input type="radio" id="DL2" name="DL" value="English">
+      <label for="DL2">English</label>
+      
+      <input type="radio" id="DL3" name="DL" value="Arabic">
+      <label for="DL3">Arabic</label>
+      <br>
+      <input type="radio" id="DL4" name="DL" value="">
+      <label for="DL4">Other (specify):</label>
+      
+      <input type="text" id="otherLanguage" name="otherLanguage" placeholder="Specify language" disabled>
+     
+      <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    const otherLanguageRadio = document.getElementById('DL4');
+    const otherLanguageInput = document.getElementById('otherLanguage');
+
+    otherLanguageRadio.addEventListener('change', function () {
+        if (otherLanguageRadio.checked) {
+            otherLanguageInput.removeAttribute('disabled');
+        } else {
+            otherLanguageInput.setAttribute('disabled', 'disabled');
+            otherLanguageInput.value = ''; // Clear the input when "Other" is unchecked
+        }
+    });
+});
+      </script>
+
+      <label>Offered:</label>
+
+      <input type="checkbox" id="O" name="O" value="Fall" />
+      <label for="O1">Fall</label>
+
+      <input type="checkbox" id="O" name="O" value="Spring" />
+      <label for="O2">Spring</label>
+
+      <input type="checkbox" id="O" name="O" value="Summer" />
+      <label for="O3">Summer</label>
+
+      <br />
+      <label for="cs">Current Semester:</label>
+      <input type="text" id="cs" name="cs" />
+      <br />
+      <label for="CRN">CRN :</label>
+      <input type="text" id="CRN" name="CRN" pattern="\d{5}" placeholder="Enter 5 digits" required />
+      <br />
+      <label for="clsc">Class Schedule :</label>
+      <input type="text" id="clsc" name="clsc" pattern="(MT|MW|MF|TR|TF|WR) (.*\d.*)?" placeholder="TR 17:00-18:15" />
+      <br />
+      <label for="cpks">Course prerequisite knowledge and skills:</label>
+      <input type="text" id="cpks" name="cpks" />
+      <br />
+      <label for="cd">Course Description:</label>
+      <input type="text" id="cd" name="cd" />
+      <br />
+      <label for="cg">Course Goals:</label>
+      <input type="text" id="cg" name="cg" />
+      <br />
+      <label for="dm">Delivery Mode:</label>
+      <input type="text" id="dm" name="dm" />
+      <br />
+      <label for="clo">Course Learning Outcomes (LOs):</label>
+      <input type="text" id="clo" name="clo" />
+      <br />
+      <label for="WritingRequirements">Writing Requirements:</label>
+      <input type="text" id="WritingRequirements" name="WritingRequirements" />
+      <br />
+      <label for="OralRequirements">Oral Requirements:</label>
+      <input type="text" id="OralRequirements" name="OralRequirements" />
+      <br />
+      <label for="TechnicalRequirements">Technical Requirements:</label>
+      <input
+        type="text"
+        id="TechnicalRequirements"
+        name="TechnicalRequirements"
+      />
+      <br />
+      <label for="pg">Grade needed to pass course:</label>
+<select id="pg" name="pg">
+  <option value="60">60</option>
+  <option value="70">70</option>
+</select>
+<br />
+      <label for="ap">Active Participation percentage:</label>
+      <input type="number" id="ap" name="ap" min="0" max="20"/>
+      <br />
+      <label for="tqm">Tests, quizzes, midterm percentage:</label>
+      <input type="number" id="tqm" name="tqm" min="0" max="75"/>
+      <br />
+      <label for="hw">Homework percentage:</label>
+      <input type="number" id="hw" name="hw"  min="0" max="20"/>
+      <br />
+      <label for="fe">Final Exam percentage:</label>
+      <input type="number" id="fe" name="fe" MIN="0" max="60"/>
+      <br />
+      <label for="date">Latest Update on:</label>
+      <input type="date" id="date" name="date" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="fillSyllabus.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

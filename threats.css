@@ -1,0 +1,28 @@
+
+ .button-container {
+    text-align: center;
+}
+
+.my-button {
+    background-color: #0f00b5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.my-button:hover {
+    background-color: #2600ff;
+}
+a{
+    font-size: larger;
+      color: #ffffff;
+      text-decoration: none;
+  }
+
+ a:hover {
+      color: #ffffff;
+      text-decoration: none;
+  }

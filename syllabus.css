@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    /* font-family: "Times New Roman", Times, serif; */
+}
+.hlinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkblue;
+  }
+  .hlinks li {
+    float: left;
+  }
+  .hlinks li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .hlinks li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color:blue;
+    color: black;
+  }
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.top_header, .bottom {
+    background-color:  white;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: darkblue;
+}
+.top_menu {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.middle_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex: 1;
+    padding-right: 15px;
+}
+.row_content {
+    display: flex;
+}
+.column_about {
+    border-right: 1px solid white;
+    background-color: darkblue;
+    padding-left: 5px;
+    flex: 0 0 15%;
+    color: white;
+}
+.column_main {
+    flex: 0 0 80%;
+    padding-left: 15px;
+}
+.divv{text-align: right;
+position: fixed;
+z-index: 9999999;
+bottom: 0;
+width: auto;
+right: 1%;
+cursor: pointer;
+line-height: 0;
+display: block !important;
+}
+.collapse li {
+    list-style-type: none;
+    padding: 2px;
+    border-radius: 8px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.collapse li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+li{text-align: -webkit-match-parent;
+}
+.logo{
+    width: 120px;
+    margin-right: 90px;
+    vertical-align: middle;
+}
+.links{
+    font-size: medium;
+  }
+  .links a {
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+  }
+  .links a:hover {
+    background-color: blue;
+    color: black;
+  }
+  .courseInfoTable,
+tr,
+th {
+  margin: 25px;
+  border-style: groove;
+  border-color: darkblue;
+  width: 55%;
+  text-align: center;
+}
+td {
+  border-style: solid;
+}
+.text1{
+  font-size: large;
+  border:5px ;
+  border-style: groove;
+margin:25px;
+}
+.courseTable,tr,th{
+  width:80%;
+  margin: 25px;
+  border-style: groove;
+  border-color: darkblue;
+ 
+  text-align: left;
+}
+.partFive{
+  margin:25px;
+  margin-right: 18%;
+  border-style: groove;
+  font-size: large;
+} 
+.courseTable2 ,.th ,.td ,.tr{
+  padding:25px;
+  margin: 25px;
+  
+  border-color: darkblue;
+  width: 55%;
+  text-align: center;
+}
+.tr1{
+  background-color: darkblue;
+  color: white;
+}
+.td1{
+  background-color: darkblue;
+  color: white;
+}
+#div11{
+  font-size: larger;
+}
+hr{
+ border: 2px groove black ;
+ 
+}
+.titles {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: darkblue;
+    font-size: large;
+  }
+  .sButton{
+    background-color:darkblue; 
+    color:#ddd;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    position:relative;
+ 
+  }
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="threats.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILE UPLOAD VULNERABILITIES</title>
+</head>
+<body>
+    <div class="button-container">
+        <a href="cookies.html"> <button class="my-button">Back</button></a>
+    </div>
+    <h1>File Upload Vulnerabilities Prevention Tips</h1>
+    <p><strong>File Upload Vulnerabilities</strong> can expose your web application to various security risks, including the execution of malicious files. Follow these tips to prevent file upload vulnerabilities:</p>
+    
+    <ol>
+        <li>Restrict File Types: Allow only specific file types that are necessary for your application. Reject all others.</li>
+        <li>Scan Uploaded Files: Implement a file scanning mechanism to detect malicious content in uploaded files.</li>
+        <li>Use Secure File Permissions: Ensure that uploaded files are stored with appropriate permissions to prevent unauthorized access and execution.</li>
+        <li>Use Unique Filenames: Generate unique filenames for uploaded files to avoid filename collisions and overwriting existing files.</li>
+        <li>Limit File Size: Enforce a maximum file size limit to prevent large files from affecting system performance.</li>
+        <li>Validate File Metadata: Verify the integrity of file metadata to ensure it matches the content and format of the file.</li>
+        <li>Implement an Access Control System: Restrict file access to authorized users and prevent public access.</li>
+        <li>Use Content Disposition Headers: Use Content-Disposition headers to control how browsers handle downloaded files and prevent inline execution of files.</li>
+        <li>Regularly Update Dependencies: Keep third-party libraries and components up to date to patch known vulnerabilities.</li>
+        <li>Conduct Security Testing: Perform security testing, including penetration testing and code analysis, to identify and address vulnerabilities.</li>
+        <li>Educate Users: Inform users about the risks of uploading and downloading files and encourage them to exercise caution.</li>
+    </ol>
+
+    <p>By following these tips, you can significantly reduce the risk of File Upload Vulnerabilities and enhance the security of your web application.</p>
+</body>
+</html>
